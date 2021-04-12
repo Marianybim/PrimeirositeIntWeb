@@ -8,6 +8,10 @@ body{
   font-size: 35px;
   color: white;
 }
+         div{
+         }
+         footer{
+         }
 		h1{ 
 			text-align: center;
 			color:#1E90FF;
@@ -22,6 +26,47 @@ body{
 		p{
 			color: #F5F5F5;
 			font-size: 20px;
+			margin-bottom:1%; 
+			margin-top:1%;
+			text-align:justify;
+            margin-left: 30px;				
+}
+         ol li{
+         	
+			color: #F5F5F5;
+			font-size: 20px;
+         }
+.titulos{
+	text-align: center;
+			color:#1E90FF;
+			font-size: 25px;
+}
+.container{
+	padding: 30px;
+
+}
+ .center{
+ 	     display: block;
+ 	     margin-left: auto;
+ 	     margin-right: auto;
+ 	     width: 15em; 
+}
+
+.center1{
+	 display: block;
+ 	     margin-left: auto;
+ 	     margin-right: auto;
+ 	     text-align: 1.0em;
+}
+      td,th{
+      	border: 0.1em solid #F5F5F5;
+      	text-align: center;
+      	padding: 0.7em;
+      }
+      table{
+      	color: #F5F5F5;
+		font-size: 20px;
+		margin-left: 30px;
 }
       <style>
              a:link {
