@@ -22,6 +22,12 @@ body{
 			color:#1E90FF;
 			font-size: 25px;
 }	
+        img{
+        	display: block;
+        	margin-left: auto;
+        	margin-right: auto;
+        	width:50%;
+        }
 		
 		p{
 			color: #F5F5F5;
