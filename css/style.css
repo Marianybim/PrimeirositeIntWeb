@@ -1,17 +1,70 @@
+/*tela menor que 599px*/
+@media screen and(max-width: 599px){
+	.container{
+		margin-top: 65%;
+	 }
+     }
+     /*tela maior que 600px*/
+     @media screen and (min-width: 599px){
+     	.coontainer{
+     		margin-top: 40%;
+     	}
+     }
+@media screen and(min-width:768px){
+	.container{
+		margin-top: 20%;}
+
+	header{
+      flex-direction: row;
+      position:relative;  
+	}
+	
+	 .menuopcoes{
+
+		position: absolute;
+		right: 5%;
+		top:50%;
+
+	 }
+	 .menuopcoes ul li{
+
+		display: inline;
+		margin-left: 10px;
+
+	 }
+}
 body{
 			background-color:#4F4F4F;
 		}
-		header {
+		header, footer {
   background-color: #4F4F4F;
-  padding: 30px;
+  padding: 1%;
   text-align: center;
   font-size: 35px;
   color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
-         div{
-         }
-         footer{
-         }
+.fixo{
+	position: fixed;
+	top: 5;
+	right: 0;
+	left: 0;
+	z-index: 500;
+}
+.ajustes{
+	line-height: 1;
+	text-align: center;
+}
+.ajustes li:hover{
+background-color: #708090;
+color:blue;
+}
+        
 		h1{ 
 			text-align: center;
 			color:#1E90FF;
@@ -37,7 +90,7 @@ body{
 			text-align:justify;
             margin-left: 30px;				
 }
- ul li,ol li{
+ .listastexto{
             color: #F5F5F5 ;
 		    font-size: 20px ;
 		    text-align:justify;
@@ -56,6 +109,7 @@ body{
     margin-right: auto;
     margin-top: 2%;
     margin-bottom: 2%;
+    margin-top: 25%;
 
 }
  .center{
@@ -65,11 +119,17 @@ body{
  	     width: 15em; 
 }
 
-.center1{
+.imgtexto{
 	 display: block;
  	     margin-left: auto;
  	     margin-right: auto;
  	     text-align: 1.0em;
+}
+.imglogo{
+	width: 20%;
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 16px; 	
 }
       td,th{
       	border: 0.1em solid #F5F5F5;
@@ -102,5 +162,5 @@ body{
               color: purple;
               background-color: transparent;
               text-decoration: underline;
-            }
-      </style>
+          }      
+         </style}
