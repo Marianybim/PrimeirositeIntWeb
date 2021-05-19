@@ -1,5 +1,5 @@
 /*tela menor que 599px*/
-@media screen and(max-width: 599px){
+@media screen and (max-width: 599px){
 	.container{
 		margin-top: 65%;
 	 }
@@ -10,36 +10,36 @@
      		margin-top: 40%;
      	}
      }
-@media screen and(min-width:768px){
+@media screen and (min-width:768px){
 	.container{
 		margin-top: 20%;}
 
 	header{
       flex-direction: row;
-      position:relative;  
+      position:relative; 
 	}
-	
-	 .menuopcoes{
+
+	.menu-opcoes{
 
 		position: absolute;
 		right: 5%;
-		top:50%;
+		top:45%;
 
-	 }
-	 .menuopcoes ul li{
-
+    }
+	 .menu-opcoes ul li {
 		display: inline;
 		margin-left: 10px;
+    }
 
-	 }
-}
+ }
+
+	
 body{
 			background-color:#4F4F4F;
 		}
 		header, footer {
   background-color: #4F4F4F;
   padding: 1%;
-  text-align: center;
   font-size: 35px;
   color: white;
   position: relative;
@@ -54,11 +54,12 @@ body{
 	top: 5;
 	right: 0;
 	left: 0;
-	z-index: 500;
+	z-index: 1030;
 }
 .ajustes{
 	line-height: 1;
-	text-align: center;
+	text-align:center;
+
 }
 .ajustes li:hover{
 background-color: #708090;
@@ -131,6 +132,7 @@ color:blue;
  	top: 10px;
  	left: 16px; 	
 }
+ 
       td,th{
       	border: 0.1em solid #F5F5F5;
       	text-align: center;
