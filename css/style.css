@@ -10,11 +10,12 @@
      		margin-top: 40%;
      	}
      }
-@media screen and (min-width:768px){
+@media screen and (min-width:800px){
 	.container{
 		margin-top: 20%;}
 
 	header{
+	  background-color: rgba( 0,0,0,0,1.0);
       flex-direction: row;
       position:relative; 
 	}
@@ -164,5 +165,24 @@ color:blue;
               color: purple;
               background-color: transparent;
               text-decoration: underline;
-          }      
+          }    
+.testeri{
+	     float: left;
+	     width:150px;
+	     height:150px;
+	     margin-left:5px;
+       } 
+       } 
+.testepa{
+	     margin-left: 15%;
+       } 
+.testele{
+	float: right;
+	width:170px;
+	height:170px;
+    margin-left:5px;
+       } 
+
+       }
+.testepale
          </style}
