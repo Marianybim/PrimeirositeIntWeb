@@ -7,7 +7,6 @@ body{
 		header, footer {
   background-color: rgba(0,0,0,0.3);
   padding: 1%;
-  font-size: 35px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,30 +14,31 @@ body{
   font-size: 1.5em;
   line-height: 1.5em;
   width: 100%;
+  top: 5;
 }
-.fixo{
-	position: fixed;
-	top: 5;
-	right: 0;
-	left: 0;
-	z-index: 1030;
+.fixo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
-.ajustes{
+.ajustes {
 	line-height: 1;
 	text-align:center;
 
 }
-.ajustes li:hover{
+.ajustes li: hover{
 background-color: #708090;
 color:blue;
 }
         
 		h1{ 
 			text-align: center;
-			color:#1E90FF;
+			color: #1E90FF;
 			font-size: 25px;
-			top: 10%;
-}	
+			top: 20%;
+}
          h2{
 			text-align: center;
 			color:#1E90FF;
@@ -46,7 +46,7 @@ color:blue;
 }	
 h3{
 			text-align: center;
-			color:#1E90FF;
+			color: #1E90FF;
 			font-size: 1.2em;
 			text-decoration: underline;
 
@@ -56,7 +56,7 @@ h3{
         	display: block;
         	margin-left: auto;
         	margin-right: auto;
-        	width:80%;
+        	width: 80%;
         }
 		
 		p{
@@ -69,14 +69,14 @@ h3{
 }
  .listastexto{
             color: #F5F5F5 ;
-		    font-size: 20px ;
-		    text-align:justify;
+		        font-size: 20px ;
+		        text-align: justify;
             margin-left: 30px;	
          }
 
 .titulos{
 	text-align: center;
-			color:#1E90FF;
+			color: #1E90FF;
 			font-size: 25px;
 }
 .container{
@@ -90,44 +90,47 @@ h3{
 
 }
 
-#sobre, #galeria{
+#sobre {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-	margin: 5 auto;
+	margin: 0 auto;
 }
-#sobre .sobre,#galeria .galeria{
+#sobre .sobre {
 	text-align: center;
+  width: 25%;
 }
-.imgsobre, .imggaleria{
+#galeria .galeria{
+  text-align: center;
+  width: 25%;
+
+}
+.imgsobre{
 	width: 50%;
 	height: 50%;
-	 transition: width 2s;
    text-align: center;
+   transition: width 2s;
+}
+.imgsobre:hover{
+   width: 55%;
 }
 
 .imggaleria{
-  width:100%;
-  height: 100%;
+  width:90%;
+  height: 90%;
   text-align: center;
   margin-left: 30px;
   display: block;
   
 }
 }
-#galeria{
- display: flex;
-  flex-direction: column;
-  align-items: center;
+#galeria {
+  width: 2px 2px;
   position: relative;
-  margin:  5px 10px;
-  text-align: center;
-
 
 }
 #galeria .galeria{
-  margin: 2px 2px;
   text-align: center;
 }
 
@@ -152,6 +155,7 @@ h3{
  	left: 16px; 
  	float: left;
  margin-bottom: 25%;	
+ margin-top: 25%;
 }
  
       td,th{
@@ -231,25 +235,14 @@ fieldset{
 	 }
      }
      /*tela maior que 600px*/
-     @media screen and (min-width: 599px){
+     @media screen and (min-width: 600px){
      	.coontainer{
      		margin-top: 40%;
      	}
      }
-@media screen and (min-width:800px){
+@media screen and (min-width:768px){
 	.container{
 		margin-top: 20%;}
-
-	header{
-	  background-color: rgba(0,0,0,0.3);
-      flex-direction: row;
-      position: relative; 
-      top: 0%;
-      font-weight: 100%;
-      height: 25%;
-
-	}
-
 	.menu-opcoes{
 
 		position: absolute;
@@ -257,29 +250,45 @@ fieldset{
 		top:45%;
 
     }
+    header{
+    background-color: rgba(0,0,0,0.3);
+      flex-direction: row;
+      position: absolute; 
+      top: 0%;
+      font-weight: 100%;
+      height: 15%;
+  }
 	 .menu-opcoes ul li {
 		display: inline;
 		margin-left: 10px;
+
     }
+  }
    #sobre, #galeria{
    	flex-direction: row;
    	flex-wrap: wrap;
    }
 
-   #sobre h1, h3,p{
+   #sobre h1, h3, p, {
    	width: 100%;
-   	text-align: center;
+   	text-align:center;
 
+   }
+   #galeria{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
    }
    #sobre .sobre, {
    	width: 25%;
-   	text-align: center;
+   	text-align:center;
 
    }
        #galeria .galeria{
         width: 25%;
-        text-align: center;
-
+        text-align:center;
        }
  }
 
