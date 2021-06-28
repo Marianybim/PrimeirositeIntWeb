@@ -4,7 +4,7 @@
 body{
 			background-color:#4F4F4F;
 		}
-		header, footer {
+		header, footer{
   background-color: rgba(0,0,0,0.3);
   padding: 1%;
   position: relative;
@@ -15,15 +15,18 @@ body{
   line-height: 1.5em;
   width: 100%;
   top: 5;
+  align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
-.fixo {
+.fixo{
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
 }
-.ajustes {
+.ajustes{
 	line-height: 1;
 	text-align:center;
 
@@ -80,61 +83,64 @@ h3{
 			font-size: 25px;
 }
 .container{
-	width: 80%
+	width: 80%;
 	padding: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 2%;
     margin-top: 25%;
-
 }
 
-#sobre {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	margin: 0 auto;
+#sobre{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+   
 }
-#sobre .sobre {
-	text-align: center;
-  width: 25%;
+
+#sobre .sobre{
+  text-align: center;
+  width: 100%;
+}
+
+.imgsobre{
+  width: 30%;
+  height: 30%;
+ transition: width 2s;
+}
+.imgsobre:hover{
+  width: 35%;
+}
+
+#galeria{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+  margin: 0 auto; 
+
 }
 #galeria .galeria{
   text-align: center;
-  width: 25%;
+  width: 100%;
 
-}
-.imgsobre{
-	width: 50%;
-	height: 50%;
-   text-align: center;
-   transition: width 2s;
-}
-.imgsobre:hover{
-   width: 55%;
 }
 
 .imggaleria{
-  width:90%;
-  height: 90%;
-  text-align: center;
-  margin-left: 30px;
-  display: block;
-  
+  width: 50%;
+  height: 50%;
+  border-radius: 5%; 
+  margin-top: 5px;
+}
+.imggaleria: hover{
+  width: 55%;
 }
 }
-#galeria {
-  width: 2px 2px;
-  position: relative;
-
-}
-#galeria .galeria{
-  text-align: center;
-}
-
-
  .center{
  	     display: block;
  	     margin-left: auto;
@@ -240,20 +246,18 @@ fieldset{
      		margin-top: 40%;
      	}
      }
-@media screen and (min-width:768px){
+@media screen and (min-width:700px){
 	.container{
 		margin-top: 20%;}
 	.menu-opcoes{
-
 		position: absolute;
 		right: 5%;
 		top:45%;
-
     }
     header{
     background-color: rgba(0,0,0,0.3);
       flex-direction: row;
-      position: absolute; 
+      position: relative; 
       top: 0%;
       font-weight: 100%;
       height: 15%;
@@ -263,33 +267,34 @@ fieldset{
 		margin-left: 10px;
 
     }
-  }
-   #sobre, #galeria{
-   	flex-direction: row;
-   	flex-wrap: wrap;
-   }
+  
+ 
+  
+  #galeria {
 
-   #sobre h1, h3, p, {
-   	width: 100%;
-   	text-align:center;
-
+    flex-direction: row;
+    flex-wrap: wrap;
    }
-   #galeria{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-   }
-   #sobre .sobre, {
-   	width: 25%;
-   	text-align:center;
+   #sobre h1, h3, p {
+    width: 100%;
+    text-align: center;
 
    }
-       #galeria .galeria{
-        width: 25%;
-        text-align:center;
-       }
+   #sobre{
+        flex-direction: row;
+        flex-wrap: wrap;
+   }
+  
+   #sobre .sobre{
+    width: 25%;
+    text-align: center;
+   }
+  
+
+   #galeria .galeria{
+     width: 50%;
+    
+    }
  }
 
-         </style}
+         </style>
