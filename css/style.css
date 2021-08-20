@@ -233,13 +233,13 @@ fieldset{
 /*tela menor que 599px*/
 @media screen and (max-width: 599px){
 	.container{
-		margin-top: 80%;
+		margin-top: 95%;
 	 }
      }
      /*tela maior que 600px*/
      @media screen and (min-width: 600px){
      	.container{
-     		margin-top: 90%;
+     		margin-top: 80%;
      	}
      }
 @media screen and (min-width:700px){
